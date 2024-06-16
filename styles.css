@@ -6,15 +6,21 @@
 
 body {
       background-color: hsl(148, 38%, 91%);
+      font-family: Karla, Arial, Helvetica, sans-serif;
 }
 
 main {
-      background-color: white;
-      width: 60%;
-      
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
-
+.contact-form {
+      background-color: white;
+      padding: 2.5rem;
+      width: 50%;
+}
 
 
 /* FOOTER */
