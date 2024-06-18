@@ -23,35 +23,47 @@
 
 <body>
       <main>
-            <section class="contact-form">
+            <form class="contact-form" action ="#" method="POST">
+            
                   <h1 class="title">Contact Us</h1>
 
-                  <label>First Name</label>
-                  <p>This field is required</p>
+                  <label for = "firstName">First Name</label>
+                  <br>
+                  <input id = "firstName" type = "text" name = "first-name">
+                  <p class="error-message">This field is required</p>
 
-                  <label>Last Name</label>
+                  <label for="lastName">Last Name</label>
+                  <br>
+                  <input id="lastName" type = "text" name = "last-name">
                   This field is required
 
-                  <label>Email Address</label>
-                  Please enter a valid email address
-                  This field is required
+                  <label for="emailAddress">Email Address</label>
+                  <br>
+                  <input id="emailAddress" type = "text" name = "email-address">
+                  <p class="error-message">Please enter a valid email address</p>
+                  <p class="error-message">This field is required</p>
 
-                  Query Type
-                  General Enquiry
-                  Support Request
-                  Please select a query type
+                  <p>Query Type</p>
+                  <input type = "radio" name = "query-type" id ="general" value = "General Inquiry">
+                  <label for="general">General Enquiry</label>
 
-                  Message
-                  This field is required
+                  <input type = "radio" name="query-type" id="support" value="Support Request">
+                  <label for="support">Support Request</label>
+                  <p class="error-message">Please select a query type</p>
 
-                  I consent to being contacted by the team
-                  To submit this form, please consent to being contacted
+                  <label for="contact-message">Message</label>
+                  <textarea id = "contact-message"></textarea>
+                  <p class="error-message">This field is required</p>
 
-                  Submit
+                  <input type = "checkbox" id="consent" name="consent-agreement" value = "accept">
+                  <label for="consent">I consent to being contacted by the team</label>
+                  <p class="error-message">To submit this form, please consent to being contacted</p>
+
+                  <input type = "submit">
 
                   Message Sent!
                   Thanks for completing the form. We'll be in touch soon!
-            </section>
+            </form>
       </main>
 
       <footer>
