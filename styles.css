@@ -24,6 +24,43 @@ main {
       /* height: 48.3rem; */
 }
 
+.form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1rem;
+}
+
+.email-section{
+      grid-column: 1/ span 2;
+}
+
+
+#emailAddress{
+      width: 100%;
+}
+
+.error-message {
+      display: block;
+      grid-column: 1/ span 2;
+}
+.query-title {
+      grid-column: 1/ span 2;
+}
+
+.query-type {
+      display: flex;
+}
+
+.message-section {
+      grid-column: 1/ span 2;
+}
+#contact-message{
+      width: 100%;
+}
+
+.submit-btn{
+      width: 100%;
+}
 
 /* FOOTER */
 .attribution {
