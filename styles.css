@@ -21,7 +21,6 @@ main {
       border-radius: 1rem;
       padding: 2.5rem;
       width: 46rem;
-      /* height: 48.3rem; */
 }
 
 .form-grid {
@@ -30,36 +29,58 @@ main {
       column-gap: 1rem;
 }
 
-.email-section{
-      grid-column: 1/ span 2;
+#firstName,
+#lastName,
+.query-type, 
+#emailAddress,
+.submit-btn {
+      width: 100%;
+      height: 51px;
+      border-radius: 0.5rem;
 }
 
-
-#emailAddress{
-      width: 100%;
+.query-title,
+.email-section,
+.message-section {
+      grid-column: 1/ span 2;
 }
 
 .error-message {
       display: block;
       grid-column: 1/ span 2;
 }
-.query-title {
-      grid-column: 1/ span 2;
-}
+
 
 .query-type {
+      border: 1px solid black;
+      border-radius: 0.5rem;
       display: flex;
+      align-items: center;
 }
 
-.message-section {
-      grid-column: 1/ span 2;
+#general,
+#support {
+      margin:0rem 1rem;
 }
+
+
 #contact-message{
       width: 100%;
+      height: 6.56rem;
+      border-radius: 0.5rem;
 }
 
-.submit-btn{
-      width: 100%;
+.consent-section {
+      margin: 2.5rem 0rem;
+}
+
+.submit-btn {
+      background-color: hsl(169, 82%, 27%);
+      color: white;
+      font-size: 1rem;
+      font-family: Karla, Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      border: none;
 }
 
 /* FOOTER */
