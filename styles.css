@@ -5,7 +5,6 @@
 }
 
 body {
-      font-size: 1.125rem;
       background-color: hsl(148, 38%, 91%);
       font-family: Karla, Arial, Helvetica, sans-serif;
 }
@@ -72,7 +71,7 @@ textarea {
 }
 
 .error-message {
-      display: block;
+      display: none;
       grid-column: 1/ span 2;
 }
 
@@ -89,6 +88,8 @@ textarea {
 #general,
 #support {
       margin:0rem 1rem;
+      accent-color:hsl(169, 82%, 27%);
+      transform: scale(1.5);
 }
 
 .message-section {
@@ -112,6 +113,7 @@ textarea {
 
 #consent {
       margin-right: 1rem;
+      accent-color:hsl(169, 82%, 27%);
 }
 
 
@@ -122,6 +124,10 @@ textarea {
       font-family: Karla, Arial, Helvetica, sans-serif;
       font-weight: 700;
       border: none;
+}
+
+.submit-btn:hover {
+      cursor: pointer;
 }
 
 /* FOOTER */
