@@ -5,19 +5,34 @@
 }
 
 body {
+      font-size: 1.125rem;
       background-color: hsl(148, 38%, 91%);
       font-family: Karla, Arial, Helvetica, sans-serif;
 }
 
 main {
-      padding: 8rem 0rem;
       display: flex;
       justify-content: center;
       align-items: center;
 }
 
+h1 {
+      font-size: 2rem;
+}
+
+.required-star {
+      color:hsl(169, 82%, 27%);
+}
+
+.error-message {
+      font-size: 1rem;
+      margin: 0.5rem 0rem;
+      color: hsl(0, 66%, 54%);
+}
+
 .contact-form {
       background-color: white;
+      margin: 8rem 1rem;
       border-radius: 1rem;
       padding: 2.5rem;
       width: 46rem;
@@ -90,9 +105,15 @@ textarea {
       margin: 2.5rem 0rem;
 }
 
+.consent {
+      display: flex;
+      align-items: center;
+}
+
 #consent {
       margin-right: 1rem;
 }
+
 
 .submit-btn {
       background-color: hsl(169, 82%, 27%);

@@ -30,15 +30,15 @@
                   <div class="form-grid">
                         <!-- FIRST NAME -->
                          <div class="form-element">
-                              <label for = "firstName">First Name</label>
+                              <label for = "firstName">First Name <span class="required-star">*</span></label>
                               <br>
                               <input id = "firstName" type = "text" name = "first-name">
-                              <p>This field is required</p>
+                              <p class="error-message">This field is required</p>
                         </div>
 
                         <!-- LAST NAME -->
                         <div class="form-element">
-                              <label  for="lastName">Last Name</label>
+                              <label  for="lastName">Last Name <span class="required-star">*</span></label>
                               <br>
                               <input  id="lastName" type = "text" name = "last-name">
                               <p class="error-message">This field is required</p>
@@ -46,7 +46,7 @@
 
                         <!-- EMAIL ADDRESS -->
                         <div class="form-element email-section">
-                              <label for="emailAddress">Email Address</label>
+                              <label for="emailAddress">Email Address <span class="required-star">*</span></label>
                               <br>
                               <input id="emailAddress" type = "text" name = "email-address">
                               <p class="error-message">Please enter a valid email address</p>
@@ -54,7 +54,7 @@
                         </div>
 
                         <!-- QUERY TYPE -->
-                        <p class="query-title">Query Type</p>
+                        <p class="query-title">Query Type <span class="required-star">*</span></p>
                         <div class="form-element query-type">
                               <input type = "radio" name = "query-type" id ="general" value = "General Inquiry">
                               <label  for="general">General Enquiry</label>
@@ -68,7 +68,7 @@
 
                         <!-- MESSAGE -->
                         <div class="form-element message-section">
-                              <label for="contact-message">Message</label>
+                              <label for="contact-message">Message <span class="required-star">*</span></label>
                               <textarea id = "contact-message"></textarea>
                               <p class="error-message">This field is required</p>
                         </div>
@@ -76,8 +76,10 @@
 
                   <!-- CONSENT CHECKBOX -->
                   <div class="form-element consent-section">
-                        <input type = "checkbox" id="consent" name="consent-agreement" value = "accept">
-                        <label for="consent">I consent to being contacted by the team</label>
+                        <div class="consent">
+                              <input type = "checkbox" id="consent" name="consent-agreement" value = "accept">
+                              <label for="consent">I consent to being contacted by the team <span class="required-star">*</span></label>
+                        </div>
                         <p class="error-message">To submit this form, please consent to being contacted</p>
                   </div>
 
