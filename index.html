@@ -23,7 +23,7 @@
 
 <body>
       <main>
-            <form class="contact-form" action ="#" method="POST">
+            <form class="contact-form" action ="/" >
             
                   <h1 class="title">Contact Us</h1>
 
@@ -32,55 +32,55 @@
                          <div class="form-element">
                               <label for = "firstName">First Name <span class="required-star">*</span></label>
                               <br>
-                              <input id = "firstName" type = "text" name = "first-name" required>
-                              <p class="error-message">This field is required</p>
+                              <input id = "firstName" type = "text" name = "first-name">
+                              <p class="error-message first-name-error">This field is required</p>
                         </div>
 
                         <!-- LAST NAME -->
                         <div class="form-element">
                               <label  for="lastName">Last Name <span class="required-star">*</span></label>
                               <br>
-                              <input  id="lastName" type = "text" name = "last-name" required>
-                              <p class="error-message">This field is required</p>
+                              <input  id="lastName" type = "text" name = "last-name" >
+                              <p class="error-message last-name-error">This field is required</p>
                        </div>
 
                         <!-- EMAIL ADDRESS -->
                         <div class="form-element email-section">
                               <label for="emailAddress">Email Address <span class="required-star">*</span></label>
                               <br>
-                              <input id="emailAddress" type = "text" name = "email-address" required>
-                              <p class="error-message">Please enter a valid email address</p>
-                              <p class="error-message">This field is required</p>
+                              <input id="emailAddress" type = "text" name = "email-address">
+                              <p class="error-message email-error">This field is required</p>
+                              <p class="error-message invalid-email-error">Please enter a valid email address</p>
                         </div>
 
                         <!-- QUERY TYPE -->
                         <p class="query-title">Query Type <span class="required-star">*</span></p>
                         <div class="form-element query-type">
-                              <input type = "radio" name = "query-type" id ="general" value = "General Inquiry" required>
+                              <input type = "radio" name = "query-type" id ="general" value = "General Inquiry">
                               <label  for="general">General Enquiry</label>
                         </div>
                         
                         <div class="form-element query-type">
-                              <input  type = "radio" name="query-type" id="support" value="Support Request" required>
+                              <input  type = "radio" name="query-type" id="support" value="Support Request">
                               <label for="support">Support Request</label>
                         </div>
-                        <p class="error-message">Please select a query type</p>
+                        <p class="error-message query-error">Please select a query type</p>
 
                         <!-- MESSAGE -->
                         <div class="form-element message-section">
                               <label for="contact-message">Message <span class="required-star">*</span></label>
-                              <textarea id = "contact-message" required></textarea>
-                              <p class="error-message">This field is required</p>
+                              <textarea id = "contact-message"></textarea>
+                              <p class="error-message message-error">This field is required</p>
                         </div>
                   </div>
 
                   <!-- CONSENT CHECKBOX -->
                   <div class="form-element consent-section">
                         <div class="consent">
-                              <input type = "checkbox" id="consent" name="consent-agreement" value = "accept" required>
+                              <input type = "checkbox" id="consent" name="consent-agreement" value = "accept">
                               <label for="consent">I consent to being contacted by the team <span class="required-star">*</span></label>
                         </div>
-                        <p class="error-message">To submit this form, please consent to being contacted</p>
+                        <p class="error-message consent-error">To submit this form, please consent to being contacted</p>
                   </div>
 
                   <!-- SUBMIT -->
@@ -99,6 +99,7 @@
             </div>
       </footer>
 
+      <script src="./script.js" ></script>
 </body>
 
 </html>

@@ -27,6 +27,8 @@ h1 {
       font-size: 1rem;
       margin: 0.5rem 0rem;
       color: hsl(0, 66%, 54%);
+      display: none;
+      grid-column: 1/ span 2;
 }
 
 .contact-form {
@@ -67,11 +69,6 @@ textarea {
 .query-title,
 .email-section,
 .message-section {
-      grid-column: 1/ span 2;
-}
-
-.error-message {
-      display: none;
       grid-column: 1/ span 2;
 }
 
